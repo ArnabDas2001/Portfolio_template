@@ -68,14 +68,14 @@ nav{
 .wrapper{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
     overflow: hidden;
 }
-.cols{
-    width: 50%;
+.cols0{
+    width: 100%;
 }
 .topline{
     display: block;
@@ -94,7 +94,7 @@ nav{
 }
 h1{
     display: block;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 900;
     color: #3c4e58;
 }
@@ -104,10 +104,61 @@ h1{
 }
 p{
     display: block;
-    width: 90%;
+    width: 50%;
     font-size: 1.2em;
     color: #3c4e58;
 }
 .btns{
-    width:
+    width: 100%;
+    position: relative;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: #3c4e58;
+    padding: 8px 14px;
+    margin: 35px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    color:rgb(55, 0, 255) ;
+    background-color: transparent;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: 600px;
+    top: -25px;
+    animation: animateSera 4s linear infinite;
+}
+@keyframes animateSera{
+    50%{
+        top: -50px;
+    }
+}
+.imgbox #stoke{
+    position: absolute;
+    top: 5%;
+    left: -170px;
+    width: 950px;
+    filter: saturate(100%);
+    animation: animateStoke 4s linear infinite;
+}
+@keyframes animateStoke{
+    50%{
+        top: -5%;
+        left: -160px;
+        width: 1000px;
+    }
 }

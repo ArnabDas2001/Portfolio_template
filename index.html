@@ -28,7 +28,7 @@
         <div class="wrapper">
             <div class="col cols0">
                 <span class="topline">Hello</span>
-                <h1>I'm <span class="multitext">Singer</span></h1>
+                <h1>I'm <span class="multitext"></span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id ab ducimus repellat perferendis dolorem, eum nostrum.</p>
                 <div class="btns">
                     <button>checkout skills</button>
@@ -45,5 +45,15 @@
 
     </div>
     
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Seraphine", "a singer", "a mage"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500,
+        })
+    </script>
 </body>
 </html>

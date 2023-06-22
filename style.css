@@ -25,7 +25,7 @@ nav{
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: #3c4e58;
+    color: #2a363d;
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ nav{
 }
 .navItems li a{
     font-size: 25px;
-    color: #3c4e58;
+    color: #2a363d;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: capitalize;
@@ -53,10 +53,11 @@ nav{
     background: rgb(55, 0, 255);
     padding: 3px 10px;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 .links a{
     font-size: 35px;
-    color: #3c4e58;
+    color: #2a363d;
     margin: 25px 15px;
 }
 .links a:hover{
@@ -64,6 +65,7 @@ nav{
     background: rgb(55, 0, 255);
     padding: 3px 8px;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 .wrapper{
     display: flex;
@@ -74,15 +76,56 @@ nav{
     padding: 0 10%;
     overflow: hidden;
 }
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    left: -12%;
+    top: 36%;
+    background: linear-gradient(45deg,rgb(55, 0, 255),rgb(0, 195, 255));
+    animation: object1 3s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -14%;
+        top: 38%;
+        height: 500px;
+        width: 500px;
+    }
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    left: 40%;
+    top: 13%;
+    background: linear-gradient(180deg,rgb(55, 0, 255),rgb(0, 195, 255));
+    animation: object2 3s linear infinite;
+}
+@keyframes object2{
+    50%{
+        left: 38%;
+        top: 14%;
+        height: 130px;
+        width: 130px;
+    }
+}
+.col{
+    width: 50%;
+}
 .cols0{
-    width: 100%;
+    z-index: 1;
 }
 .topline{
     display: block;
     position: relative;
     font-size: 35px;
     letter-spacing: 5px;
-    color: #3c4e58;
+    color: #2a363d;
 }
 .topline::after{
     position: absolute;
@@ -94,9 +137,9 @@ nav{
 }
 h1{
     display: block;
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 900;
-    color: #3c4e58;
+    color:#2a363d;
 }
 .multitext{
     color: rgb(55, 0, 255);
@@ -106,7 +149,7 @@ p{
     display: block;
     width: 50%;
     font-size: 1.2em;
-    color: #3c4e58;
+    color: #2a363d;
 }
 .btns{
     width: 100%;
@@ -119,7 +162,7 @@ button{
     font-size: 16px;
     font-weight: 400;
     color: whitesmoke;
-    background-color: #3c4e58;
+    background-color: #2a363d;
     padding: 8px 14px;
     margin: 35px 5px;
     letter-spacing: 2px;
@@ -128,7 +171,10 @@ button{
 }
 button:hover{
     color:rgb(55, 0, 255) ;
-    background-color: transparent;
+    background-color:rgb(255, 255, 255) ;
+    font-size: 17px;
+    font-weight: 400;
+    transition-duration: 0.5s;
 }
 .imgbox{
     position: relative;

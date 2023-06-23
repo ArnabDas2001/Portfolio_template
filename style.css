@@ -12,7 +12,7 @@
 .dark-mode{
     --first-col:#0b0b0c;
     --second-col:#f4f7f8;
-    --third-col:rgb(83, 53, 255);
+    --third-col:rgb(53, 56, 255);
 }
 body{
     overflow: hidden;
@@ -22,6 +22,7 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color:var(--first-col);
+    transition: 0.8s;
 }
 nav{
     display: flex;

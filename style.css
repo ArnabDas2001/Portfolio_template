@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Righteous', cursive;
 }
+html{
+    font-size: 6.25%;
+}
 :root{
     --first-col:#f3f7f9;
     --second-col:#2a363d;
@@ -28,13 +31,13 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80px;
+    height: 80rem;
     z-index: 111;
-    line-height: 80px;
+    line-height: 80rem;
 }
 #moonIcon{
-    width: 46px;
-    height: 46px;
+    width: 46rem;
+    height: 46rem;
     cursor: pointer;
     margin-top: 1.4%;
     margin-right: 3%;
@@ -45,18 +48,18 @@ nav{
 }
 .logo{
     display: flex;
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: 800;
     color: var(--second-col);
-    letter-spacing: 3px;
+    letter-spacing: 3rem;
     cursor: pointer;
     text-transform: uppercase;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    padding-left: 80px;
+    padding-left: 80rem;
 }
 .logo b{
-    font-size: 70px;
+    font-size: 70rem;
     color: var(--third-col);
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -65,34 +68,34 @@ nav{
     display: flex;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    padding-left: 150px;
+    padding-left: 150rem;
 }
 .navItems li{
     list-style: none;
-    margin: 0 15px;
+    margin: 0 15rem;
 }
 .navItems li a{
-    font-size: 25px;
+    font-size: 25rem;
     color: var(--second-col);
-    letter-spacing: 2px;
+    letter-spacing: 2rem;
     text-decoration: none;
     text-transform: capitalize;
 }
 .navItems li:hover a{
     color: var(--first-col);
     background: var(--third-col);
-    padding: 3px 10px;
-    border-radius: 10px;
+    padding: 3rem 10rem;
+    border-radius: 10rem;
     transition-duration: 0.5s;
 }
 .links{
-    padding-left: 80px;
+    padding-left: 80rem;
 }
 .links a{
     display: inline-block;
-    font-size: 35px;
+    font-size: 35rem;
     color: var(--second-col);
-    margin: 5px 15px;
+    margin: 5rem 15rem;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s*var(--i));
@@ -100,10 +103,10 @@ nav{
 .links a:hover{
     color: var(--first-col);
     background: var(--third-col);
-    padding: 3px 8px;
-    border-radius: 10px;
+    padding: 3rem 8rem;
+    border-radius: 10rem;
     transition-duration: 0.5s;
-    line-height: 45px;
+    line-height: 45rem;
 }
 .wrapper{
     display: flex;
@@ -117,8 +120,8 @@ nav{
 .wrapper::before{
     position: absolute;
     content: '';
-    height: 450px;
-    width: 450px;
+    height: 450rem;
+    width: 450rem;
     border-radius: 50%;
     left: -12%;
     top: 36%;
@@ -129,15 +132,15 @@ nav{
     50%{
         left: -14%;
         top: 38%;
-        height: 500px;
-        width: 500px;
+        height: 500rem;
+        width: 500rem;
     }
 }
 .wrapper::after{
     position: absolute;
     content: '';
-    height: 140px;
-    width: 140px;
+    height: 140rem;
+    width: 140rem;
     border-radius: 50%;
     left: 40%;
     top: 13%;
@@ -148,8 +151,8 @@ nav{
     50%{
         left: 38%;
         top: 14%;
-        height: 130px;
-        width: 130px;
+        height: 130rem;
+        width: 130rem;
     }
 }
 .col{
@@ -161,8 +164,8 @@ nav{
 .topline{
     display: block;
     position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;
+    font-size: 35rem;
+    letter-spacing: 5rem;
     color: var(--second-col);
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -171,16 +174,16 @@ nav{
 .topline::after{
     position: absolute;
     content: '';
-    height: 4px;
-    width: 45px;
-    bottom: 10px;
+    height: 4rem;
+    width: 45rem;
+    bottom: 10rem;
     background-color: var(--third-col);
     animation: slideBottom 1s ease forwards;
     animation-delay: .5s;
 }
 h1{
     display: block;
-    font-size: 4.5em;
+    font-size: 80rem;
     font-weight: 900;
     color:var(--second-col); 
     animation: slideRight 1s ease forwards;
@@ -198,7 +201,7 @@ h1{
 p{
     display: block;
     width: 50%;
-    font-size: 1.2em;
+    font-size: 18rem;
     color: var(--second-col);
     opacity: 0;
     animation: slideTop 1s ease forwards;
@@ -215,20 +218,20 @@ button{
     outline: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
     color: var(--first-col);
     background-color: var(--second-col);
-    padding: 8px 14px;
-    margin: 35px 5px;
-    letter-spacing: 2px;
+    padding: 8rem 14rem;
+    margin: 35rem 5rem;
+    letter-spacing: 2rem;
     text-transform: capitalize;
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0rem 15rem 10rem rgba(0, 0, 0, 0.4);
 }
 button:hover{
     color:var(--third-col) ;
     background-color:var(--first-col);
-    font-size: 17px;
+    font-size: 17rem;
     font-weight: 400;
     transition-duration: 0.5s;
 }
@@ -243,28 +246,28 @@ button:hover{
 .imgbox img{
     position: relative;
     height: 100%;
-    width: 600px;
-    top: -25px;
+    width: 600rem;
+    top: -25rem;
     animation: animateSera 4s linear infinite;
 }
 @keyframes animateSera{
     50%{
-        top: -50px;
+        top: -50rem;
     }
 }
 .imgbox #stoke{
     position: absolute;
     top: 5%;
-    left: -170px;
-    width: 950px;
+    left: -170rem;
+    width: 950rem;
     filter: saturate(100%);
     animation: animateStoke 4s linear infinite;
 }
 @keyframes animateStoke{
     50%{
         top: -5%;
-        left: -160px;
-        width: 1000px;
+        left: -160rem;
+        width: 1000rem;
     }
 }
 
@@ -272,41 +275,41 @@ button:hover{
 
 @keyframes slideRight{
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-100rem);
         opacity: 0;
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(0rem);
         opacity: 1;
     }
 }
 @keyframes slideLeft{
     0%{
-        transform: translateX(100px);
+        transform: translateX(100rem);
         opacity: 0;
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(0rem);
         opacity: 1;
     }
 }
 @keyframes slideTop{
     0%{
-        transform: translateY(100px);
+        transform: translateY(100rem);
         opacity: 0;
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(0rem);
         opacity: 1;
     }
 }
 @keyframes slideBottom{
     0%{
-        transform: translateY(-100px);
+        transform: translateY(-100rem);
         opacity: 0;
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(0rem);
         opacity: 1;
     }
 }
@@ -321,3 +324,8 @@ button:hover{
     }
 }
 
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 3%;
+    }
+}

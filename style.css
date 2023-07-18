@@ -6,6 +6,7 @@
 }
 html{
     font-size: 6.25%;
+    scroll-behavior: smooth;
 }
 :root{
     --first-col:#f3f7f9;
@@ -335,20 +336,20 @@ button:hover{
     width: 92%;
     height: 110%;
     position: absolute;
-    background: rgba(255, 255, 255, 0.151);
+    background: linear-gradient(to top left,rgba(0, 195, 255, 0.281) , rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.055),rgba(0, 195, 255, 0.281) );
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(17px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: -6%;
 }
 .blob{
     position: absolute;
-    width: 600rem;
-    height: 600rem;
-    margin-left: 40%;
-    margin-top: -4%;
+    width: 750rem;
+    height: 750rem;
+    margin-left: 38%;
+    margin-top: -5%;
     animation: blob 3s linear infinite;
 }
 .blob:nth-child(2){
@@ -356,17 +357,67 @@ button:hover{
 }
 @keyframes blob{
     50%{
-        margin-left: 30%;
-        margin-top: -3%;
-        height: 500rem;
-        width: 500rem;
+        margin-left: 28%;
+        margin-top: -4%;
+        height: 650rem;
+        width: 650rem;
     }
 }
-
-
-
-
-
+.frostCard img{
+    width: 350rem;
+    margin: 5.7%;
+    object-fit: cover;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    transition: 0.5s;
+}
+.frostCard img:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    transform: scale(1.05);
+}
+.frostCard .frame{
+    width: 400rem;
+    height: 550rem;
+    margin: 6%;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(43, 153, 255);
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    transition: 0.5s;
+}
+.frostCard .frame:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+}
+.aboutSera{
+    position: absolute;
+    margin-top: -46%;
+    margin-left: 49%;
+    width: 88%;
+}
+.aboutSera .abouthead{
+    padding-bottom: 1%;
+    font-size: 80rem;
+    font-weight: 900;
+    background: linear-gradient(
+        to left,#1c2327 , #f3f7f9,#1a2125);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+}
+@keyframes textShine{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
 
 
 

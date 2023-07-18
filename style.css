@@ -324,8 +324,82 @@ button:hover{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     html{
-        font-size: 3%;
+        font-size: 4%;
+    }
+    .imgbox img{
+        width: 500rem;
+        margin-left: -45% auto;
+    }
+    .imgbox #stoke{
+        width: 750rem;
+        left: -150rem auto;
+    }
+    @keyframes animateStoke{
+        50%{
+            top: -1%;
+            left: -140rem;
+            width: 850rem;
+        }
+    }
+    .cols1{
+        width: 400rem;
+        transform: translateY(46.5%);
+        margin-left: -100%;
+    }
+    .cols0{
+        width: 100%;
+        transform: translateY(-75%);
+    }
+    .topline{
+        font-size: 40rem;
+        letter-spacing: 4rem;
+    }
+    h1{
+        font-size: 50rem;
+        width: 100%;
+    }
+    p{
+        width: 100%;
+        font-size: 22rem;
+    }
+    .btns{
+        display: inline-flex;
+    }
+    button{
+        font-size: 15rem;
+        padding: 5rem 12rem;
+        margin: 25rem 2rem;
+        letter-spacing: 1rem;
+    }
+    button:hover{
+        font-size: 16rem;
+    }
+    .wrapper::before{
+        height: 400rem;
+        width: 400rem;
+        left: -16%;
+        top: 24%;
+    }
+    @keyframes object1{
+        50%{
+            left: -20%;
+            top: 26%;
+            height: 420rem;
+            width: 420rem;
+        }
+    }
+    .wrapper::after{
+        left: 70%;
+        top: 13%;
+    }
+    @keyframes object2{
+        50%{
+            left: 60%;
+            top: 14%;
+            height: 130rem;
+            width: 130rem;
+        }
     }
 }

@@ -11,8 +11,8 @@ var moonIcon = document.getElementById("moonIcon");
 moonIcon.onclick = function(){
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
-        moonIcon.src="sun.png";
+        moonIcon.src="img/sun.png";
     }else{
-        moonIcon.src="moon.png";
+        moonIcon.src="img/moon.png";
     }
 }

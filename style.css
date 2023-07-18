@@ -18,12 +18,11 @@ html{
     --third-col:rgb(53, 56, 255);
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 .container{
     width: 100%;
-    min-height: 100vh;
     background-color:var(--first-col);
     transition: 0.8s;
 }
@@ -115,7 +114,6 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 0 10%;
-    overflow: hidden;
 }
 .wrapper::before{
     position: absolute;
@@ -324,6 +322,70 @@ button:hover{
     }
 }
 
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--first-col);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.frostCard{
+    width: 92%;
+    height: 110%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.151);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -6%;
+}
+.blob{
+    position: absolute;
+    width: 600rem;
+    height: 600rem;
+    margin-left: 40%;
+    margin-top: -4%;
+    animation: blob 3s linear infinite;
+}
+.blob:nth-child(2){
+    filter: blur(50px);
+}
+@keyframes blob{
+    50%{
+        margin-left: 30%;
+        margin-top: -3%;
+        height: 500rem;
+        width: 500rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
 @media screen and (max-width: 400px) {
     html{
         font-size: 4%;

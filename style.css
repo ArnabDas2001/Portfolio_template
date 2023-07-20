@@ -587,7 +587,7 @@ button:hover{
     background-size: 500% auto;
     letter-spacing: 3rem;
     margin-right: 65%;
-    margin-top: -40%;
+    margin-top: -39.5%;
 }
 .soloseracard .videocard{
     position: absolute;
@@ -595,23 +595,114 @@ button:hover{
     height: 50%;
     backdrop-filter: blur(5px); 
     background-color: rgba(255, 255, 255, 0); 
-    border-radius: 20px; 
+    border-radius: 10px; 
     box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
     margin-left: 40%;
     margin-top: -18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.pervideo video{
-    width: 80%;
+.videocard video{
+    width: 85%;
     outline: none;
     position: absolute;
     border: none;
     object-fit: cover;
-    z-index: -1;
+    -webkit-clip-path: polygon(7% 0, 80% 0%, 100% 0, 100% 85%, 93% 100%, 20% 100%, 0 100%, 0 14%);
+    clip-path: polygon(7% 0, 80% 0%, 100% 0, 100% 85%, 93% 100%, 20% 100%, 0 100%, 0 14%);
+
+}
+.videocard .videocardframe{
+    width: 82%;
+    height: 66.5%;
+    position: absolute;
+    background-color: transparent;
+    border: 2.5px solid var(--second-col);
+}
+.soloseracard .seraSongcard{
+    position: absolute;
+    width: 37%;
+    height: 37%;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px; 
+    margin-right: 53%;
+    margin-top: -11.6%;
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seraSongcard .seraSongframe{
+    width: 90%;
+    height: 80%;
+    background-color: transparent;
+    border: 2rem solid var(--second-col) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 80%, 87% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 80%, 87% 100%, 20% 100%, 0 100%, 0% 20%);
+    transition: 0.5s;
+}
+.seraSongframe:hover{
+    transform: scale(0.9);
+    -webkit-clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 100%, 87% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 100%, 87% 100%, 20% 100%, 0 100%, 0 0);
+}
+.seraSongframe .seraSongimg{
+    width: 93%;
+    height: 83%;
+    position: absolute;
+    display: flex;
+    -webkit-clip-path: polygon(20% 0%, 88% 0, 100% 0, 100% 100%, 80% 100%, 12% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 88% 0, 100% 0, 100% 100%, 80% 100%, 12% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.seraSongimg:hover{
+    transform: scale(0.97);
+    -webkit-clip-path: polygon(20% 0%, 92% 0, 100% 16%, 100% 100%, 80% 100%, 8% 100%, 0 82%, 0 0);
+    clip-path: polygon(20% 0%, 92% 0, 100% 16%, 100% 100%, 80% 100%, 8% 100%, 0 82%, 0 0);
+}
+.seraSongimg img{
+    width: 100%;
+    object-fit: cover;
+}
+.seraSongimg .seraSongoverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0.521);
+    opacity: 0; 
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 18%;
+}
+.seraSongimg:hover .seraSongoverlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.seraSongoverlay .seraSonghead{
+    font-size: 25rem;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    font-weight: 800;
     
 }
-
-
-
+.seraSongoverlay .seraSongpara{
+    font-size: 13rem;
+    color:#f3f7f9;
+}
 
 
 /* responsive design */

@@ -13,6 +13,13 @@ html{
     --second-col:#2a363d;
     --third-col:rgb(55, 0, 255);
 }
+::-webkit-scrollbar{
+    width: 10rem;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,rgb(0, 195, 255),rgb(0, 17, 255));
+    border-radius: 10rem;
+}
 .dark-mode{
     --first-col:#0b0b0c;
     --second-col:#f4f7f8;
@@ -31,9 +38,12 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80rem;
-    z-index: 111;
+    height: 70rem;
+    z-index: 9999;
     line-height: 80rem;
+}
+nav .sticky{
+    background-color: red;
 }
 #moonIcon{
     width: 46rem;
@@ -250,27 +260,27 @@ button:hover{
     position: relative;
     height: 100%;
     width: 600rem;
-    top: -25rem;
-    animation: animateSera 4s linear infinite;
+    top: 4rem;
+    animation: animateSera 3.8s linear infinite;
 }
 @keyframes animateSera{
     50%{
-        top: -50rem;
+        top: -21rem;
     }
 }
 .imgbox #stoke{
     position: absolute;
     top: 5%;
-    left: -170rem;
-    width: 950rem;
+    width: 650rem;
+    margin-left: -10%;
     filter: saturate(100%);
-    animation: animateStoke 4s linear infinite;
+    animation: animateStoke 3.8s linear infinite;
 }
 @keyframes animateStoke{
     50%{
         top: -5%;
-        left: -160rem;
-        width: 1000rem;
+        margin-left: -5%;
+        width: 660rem;
     }
 }
 
@@ -1517,7 +1527,7 @@ button:hover{
 
 .section3{
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
     overflow-x: hidden;
     background-color: var(--first-col);
     justify-content: center
@@ -1538,6 +1548,184 @@ button:hover{
     animation: textShine 3s ease-in-out infinite alternate;
     background-size: 500% auto;
     letter-spacing: 2rem;
+}
+.section3 .container{
+    width: 92%;
+    height: 90%;
+    display: grid;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 4%;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    overflow: hidden;
+    background-image: url(img/originimg6.jpeg);
+    animation: change 100s infinite ease-in-out;
+    background-size: cover;
+}
+.section3 .origincard{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgba(0, 195, 255, 0) , rgba(0, 0, 0, 0.555));
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.377);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.container img{
+    object-fit: cover;
+    width: 102%;
+    height: 102%;
+    display: grid;
+}
+@keyframes change{
+    0%{
+        background-image: url(img/originimg1.jpeg);
+    }
+    10%{
+        background-image: url(img/originimg2.jpeg);
+    }
+    20%{
+        background-image: url(img/originimg3.jpeg);
+    }
+    30%{
+        background-image: url(img/originimg4.jpeg);
+    }
+    40%{
+        background-image: url(img/originimg5.jpeg);
+    }
+    50%{
+        background-image: url(img/originimg6.jpeg);
+    }
+    60%{
+        background-image: url(img/originimg1.jpeg);
+    }
+    70%{
+        background-image: url(img/originimg2.jpeg);
+    }
+    80%{
+        background-image: url(img/originimg3.jpeg);
+    }
+    90%{
+        background-image: url(img/originimg4.jpeg);
+    }
+    100%{
+        background-image: url(img/originimg5.jpeg);
+    }
+}
+.origincard .aboutSeraorigin{
+    position: absolute;
+    margin-left: 90%;
+    width: 80%;
+    margin-top: 2%;
+}
+.aboutSeraorigin .aboutheadorigin{
+    padding-bottom: 1%;
+    font-size: 80rem;
+    font-weight: 900;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+}
+.aboutSeraorigin p{
+    color: #f3f7f9;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg ,#3586ff,rgb(0, 195, 255));
+    min-height: 240rem;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social_icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+    flex-wrap: wrap;
+}
+footer .social_icons li{
+    list-style: none;
+}
+footer .social_icons li a{
+    font-size: 50rem;
+    color: var(--first-col);
+    margin: 0 20rem;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icons li a:hover{
+    font-size: 51rem;
+    transform: translateY(-10rem);
+}
+footer .footerpara{
+    font-size: 20rem;
+    position: absolute;
+    margin-top: 10%;
+    color: var(--first-col);
+}
+footer .wave{
+    position: absolute;
+    top: -110rem;
+    left: 0;
+    width: 100%;
+    height: 110rem;
+    background: url(img/wave.png);
+    background-size: 1000rem 110rem;
+}
+footer .wave#wave1{
+    z-index: 100;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 99;
+    opacity: 0.5;
+    bottom: 10rem;
+    animation: animatewave2 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 100;
+    opacity: 0.2;
+    bottom: 15rem;
+    animation: animatewave2 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 99;
+    opacity: 0.7;
+    bottom: 20rem;
+    animation: animatewave2 3s linear infinite;
+}
+@keyframes animatewave{
+    0%{
+        background-position: 1000rem;
+    }
+    100%{
+        background-position: 0rem;
+    }
+}
+@keyframes animatewave2{
+    0%{
+        background-position: 0rem;
+    }
+    100%{
+        background-position: 1000rem;
+    }
 }
 /* responsive design */
 @media screen and (max-width: 400px) {

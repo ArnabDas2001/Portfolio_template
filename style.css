@@ -327,6 +327,8 @@ button:hover{
     }
 }
 
+/* section1 */
+
 .section1{
     width: 100%;
     min-height: 100vh;
@@ -427,9 +429,14 @@ button:hover{
         background-position: 100% 50%;
     }
 }
+
+
+/* section2 */
+
+
 .section2{
     width: 100%;
-    min-height: 300vh;
+    min-height: 520vh;
     overflow-x: hidden;
     background-color: var(--first-col);
     justify-content: center;
@@ -552,9 +559,10 @@ button:hover{
 }
 .blob4{
     width: 1100rem;
-    height: 900rem;
+    height: 1000rem;
     position: absolute;
-    margin-top: 50%
+    margin-top: 50%;
+    margin-left: -6%;
 }
 .blob4:nth-child(8){
     filter: blur(20px);
@@ -955,7 +963,582 @@ button:hover{
     font-weight: 400;
     padding: 3%;
 }
+.blob5{
+    width: 1000rem;
+    height: 400rem;
+    position: absolute;
+    margin-top: 110%;
+    margin-left: 40%;
+}
+.blob5:nth-child(10){
+    filter: blur(20px);
+}
+.section2 .seragamecard{
+    width: 92%;
+    height: 110%;
+    position: absolute;
+    background: linear-gradient(to top right,rgba(0, 195, 255, 0.281) , rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.055),rgba(0, 195, 255, 0.281) );
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 4%;
+    margin-top: 104.8%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.seragamecard h2{
+    font-size: 45rem;
+    background: linear-gradient(
+        to left,#1c2327 , #f3f7f9,#1a2125);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    margin-left: 56%;
+    margin-top: -42%;
+    letter-spacing: 2rem;
+}
+.seragamecard .videocard2{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px; 
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    margin-right: 40%;
+    margin-top: -18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videocard2 video{
+    width: 85%;
+    outline: none;
+    position: absolute;
+    border: none;
+    object-fit: cover;
+    -webkit-clip-path: polygon(20% 0%, 91% 0, 100% 15%, 100% 100%, 80% 100%, 9% 100%, 0 84%, 0 0);
+    clip-path: polygon(20% 0%, 91% 0, 100% 15%, 100% 100%, 80% 100%, 9% 100%, 0 84%, 0 0);
+}
+.videocard2 .videocard2frame{
+    width: 82%;
+    height: 64%;
+    position: absolute;
+    background-color: transparent;
+    border: 2.5px solid var(--second-col);
+}
+.seragamecard .seraSkillcard{
+    position: absolute;
+    width: 37%;
+    height: 37%;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px; 
+    margin-left: 53%;
+    margin-top: -11.6%;
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seraSkillcard .seraSkillframe{
+    width: 90%;
+    height: 80%;
+    background-color: transparent;
+    border: 2rem solid var(--second-col) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 80%, 87% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(14% 0, 80% 0%, 100% 0, 100% 80%, 87% 100%, 20% 100%, 0 100%, 0% 20%);
+    transition: 0.5s;
+}
+.seraSkillframe:hover{
+    transform: scale(0.9);
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+}
+.seraSkillframe .seraSkillimg{
+    width: 93%;
+    height: 83%;
+    position: absolute;
+    display: flex;
+    -webkit-clip-path: polygon(20% 0%, 88% 0, 100% 0, 100% 100%, 80% 100%, 12% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 88% 0, 100% 0, 100% 100%, 80% 100%, 12% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.seraSkillimg:hover{
+    transform: scale(0.97);
+    -webkit-clip-path: polygon(20% 0%, 92% 0, 100% 16%, 100% 100%, 80% 100%, 8% 100%, 0 82%, 0 0);
+    clip-path: polygon(20% 0%, 92% 0, 100% 16%, 100% 100%, 80% 100%, 8% 100%, 0 82%, 0 0);
+}
+.seraSkillimg img{
+    width: 100%;
+    object-fit: cover;
+}
+.seraSkillimg .seraSkilloverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0.603);
+    opacity: 0; 
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 20%;
+}
+.seraSkillimg:hover .seraSkilloverlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.seraSkilloverlay .seraSkillhead{
+    font-size: 23rem;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    font-weight: 800;
+    
+}
+.seraSkilloverlay .seraSkillpara{
+    font-size: 13rem;
+    color:#f3f7f9;
+    font-weight: 400;
+}
+.seragamecard .seraGame1{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60%;
+    margin-top: 30%;
+}
+.seraGame1 .seraGame1frame{
+    width: 85%;
+    height: 80%;
+    background-color: transparent;
+    border: 2rem solid var(--second-col) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    transition: 0.5s;
+}
+.seraGame1frame:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    transform: scale(0.9);
+}
+.seraGame1 .seraGame1img{
+    width: 95%;
+    height: 93%;
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+}
+.seraGame1img:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    transform: scale(0.98);
+}
+.seraGame1img img{
+    width: 100%;
+    object-fit: cover;
+}
+.seraGame1img .seraGame1overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0.562);
+    opacity: 0; 
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 22%;
+}
+.seraGame1img:hover .seraGame1overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.seraGame1overlay .seraGame1head{
+    font-size: 20rem;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    font-weight: 800;
+}
+.seraGame1overlay .seraGame1para{
+    font-size: 12rem;
+    color:#f3f7f9;
+    font-weight: 400;
+    padding: 5%;
+}
+.seragamecard .seraGame2{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 30%;
+}
+.seraGame2 .seraGame2frame{
+    width: 85%;
+    height: 80%;
+    background-color: transparent;
+    border: 2rem solid var(--second-col) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    transition: 0.5s;
+}
+.seraGame2frame:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    transform: scale(0.9);
+}
+.seraGame2 .seraGame2img{
+    width: 95%;
+    height: 93%;
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+}
+.seraGame2img:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    transform: scale(0.98);
+}
+.seraGame2img img{
+    width: 100%;
+    object-fit: cover;
+}
+.seraGame2img .seraGame2overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0.562);
+    opacity: 0; 
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 22%;
+}
+.seraGame2img:hover .seraGame2overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.seraGame2overlay .seraGame2head{
+    font-size: 20rem;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    font-weight: 800;
+}
+.seraGame2overlay .seraGame2para{
+    font-size: 12rem;
+    color:#f3f7f9;
+    font-weight: 400;
+    padding: 5%;
+}
+.seragamecard .seraGame3{
+    height: 30%;
+    width: 28%;
+    position: absolute;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px;
+    box-shadow: 35px 35px 68px 0px rgba(80, 217, 217, 0.384), inset -10px -10px 16px 0px rgba(80, 217, 217, 0.541), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 62%;
+    margin-top: 30%;
+}
+.seraGame3 .seraGame3frame{
+    width: 85%;
+    height: 80%;
+    background-color: transparent;
+    border: 2rem solid var(--second-col) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    clip-path: polygon(20% 0%, 91% 0, 100% 19%, 100% 100%, 80% 100%, 10% 100%, 0 79%, 0 0);
+    transition: 0.5s;
+}
+.seraGame3frame:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    transform: scale(0.9);
+}
+.seraGame3 .seraGame3img{
+    width: 95%;
+    height: 93%;
+    position: absolute;
+    display: flex;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+}
+.seraGame3img:hover{
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+    transform: scale(0.98);
+}
+.seraGame3img img{
+    width: 100%;
+    object-fit: cover;
+}
+.seraGame3img .seraGame3overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0.562);
+    opacity: 0; 
+    transition: .5s ease;
+    text-align: center;
+    padding-top: 22%;
+}
+.seraGame3img:hover .seraGame3overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.seraGame3overlay .seraGame3head{
+    font-size: 20rem;
+    background: linear-gradient(
+        to left,rgb(0, 195, 255), #f3f7f9,rgb(0, 195, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    font-weight: 800;
+}
+.seraGame3overlay .seraGame3para{
+    font-size: 12rem;
+    color:#f3f7f9;
+    font-weight: 400;
+    padding: 5%;
+}
+.blob6{
+    width: 900rem;
+    height: 800rem;
+    position: absolute;
+    margin-top: 165%;
+}
+.blob6:nth-child(12){
+    filter: blur(20px);
+}
+.gallhead{
+    font-size: 80rem;
+    margin-top: 160%;
+    margin-left: 12%;
+    font-weight: 900;
+    background: linear-gradient(
+        to left,#1c2327 , #f3f7f9,#1a2125);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    letter-spacing: 2rem;
+}
+.gallarycard{
+    width: 92%;
+    height: 108%;
+    position: absolute;
+    background: linear-gradient(to top left,rgba(0, 195, 255, 0.281) , rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.055),rgba(0, 195, 255, 0.281) );
+    border-radius: 20px;
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.377) ;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 4%;
+    margin-top: 4%;
+    display: grid;
+    place-items: center;
+}
+.slidegallaryimg{
+    margin: auto;
+    height: 250rem;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 4%;
+}
+.slidegallary{
+    display: flex;
+    width: calc(250rem * 18);
+    animation: scroll 25s linear infinite;
+}
+.slidegallary:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250rem*9));
+    }
+}
+.slideimg{
+    height:250rem;
+    width: 250rem;
+    display: flex;
+    align-items: center;
+    padding: 15rem;
+    perspective:100rem;
+}
+.slideimg img{
+    width: 100%;
+    transition: transform 1s;
+    object-fit: cover;
+}
+.slideimg img:hover{
+    transform: translateZ(-10rem);
+}
+.slide1{
+    -webkit-clip-path: polygon(16% 0, 80% 0%, 100% 0, 100% 80%, 85% 100%, 20% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(16% 0, 80% 0%, 100% 0, 100% 80%, 85% 100%, 20% 100%, 0 100%, 0% 20%);
+    transition: 0.5s;
+}
+.slide1:hover{
+    -webkit-clip-path: polygon(20% 0%, 85% 0, 100% 0, 100% 100%, 80% 100%, 15% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 85% 0, 100% 0, 100% 100%, 80% 100%, 15% 100%, 0 100%, 0 0);
+}
+.slide2{
+    -webkit-clip-path: polygon(20% 0%, 85% 0, 100% 20%, 100% 100%, 80% 100%, 15% 100%, 0% 80%, 0 0);
+    clip-path: polygon(20% 0%, 85% 0, 100% 20%, 100% 100%, 80% 100%, 15% 100%, 0% 80%, 0 0);
+    transition: 0.5s;
+}
+.slide2:hover{
+    -webkit-clip-path: polygon(20% 0%, 85% 0, 100% 0, 100% 100%, 80% 100%, 15% 100%, 0 100%, 0 0);
+    clip-path: polygon(20% 0%, 85% 0, 100% 0, 100% 100%, 80% 100%, 15% 100%, 0 100%, 0 0);
+}
+.slidegallary2img{
+    margin: auto;
+    height: 250rem;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 0%;
+}
+.slidegallary2{
+    display: flex;
+    width: calc(250rem * 18);
+    animation: scroll2 25s linear infinite;
+}
+@keyframes scroll2{
+    0%{
+        transform: translateX(calc(-250rem*9));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.slidegallary2:hover{
+    animation-play-state: paused;
+}
+.slideimg2{
+    height:250rem;
+    width: 250rem;
+    display: flex;
+    align-items: center;
+    padding: 15rem;
+    perspective:100rem;
+}
+.slideimg2 img{
+    width: 100%;
+    transition: transform 1s;
+    object-fit: cover;
+}
+.slideimg2 img:hover{
+    transform: translateZ(-10rem);
+}
 
+
+
+/* section3 */
+
+.section3{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--first-col);
+    justify-content: center
+}
+
+.section3 .originhead{
+    font-size: 80rem;
+    font-weight: bold;
+    padding: 4%;
+    margin-top: -4%;
+    margin-left: 8%;
+    background: linear-gradient(
+        to left,#1c2327 , #f3f7f9,#1a2125);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: "transparent";
+    animation: textShine 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+    letter-spacing: 2rem;
+}
 /* responsive design */
 @media screen and (max-width: 400px) {
     html{

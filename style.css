@@ -12,6 +12,7 @@ html{
     --first-col:#f3f7f9;
     --second-col:#2a363d;
     --third-col:rgb(55, 0, 255);
+    --fourth-col: #f3f7f9e7;
 }
 ::-webkit-scrollbar{
     width: 10rem;
@@ -24,10 +25,10 @@ html{
     --first-col:#0b0b0c;
     --second-col:#f4f7f8;
     --third-col:rgb(53, 56, 255);
+    --fourth-col: #0b0b0ce5;
 }
 body{
     overflow-x: hidden;
-
 }
 .container{
     width: 100%;
@@ -37,13 +38,12 @@ body{
 nav{
     display: flex;
     width: 100%;
+    position: fixed;
     justify-content: space-around;
-    height: 70rem;
+    height: 80rem;
     z-index: 9999;
     line-height: 80rem;
-}
-nav .sticky{
-    background-color: red;
+    background: var(--fourth-col);
 }
 #moonIcon{
     width: 46rem;
@@ -125,6 +125,7 @@ nav .sticky{
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    padding-top: 140rem;
 }
 .wrapper::before{
     position: absolute;
@@ -347,6 +348,8 @@ button:hover{
     align-items: center;
     display: flex;
     justify-content: center;
+    padding-top: 140rem;
+    transition: 0.8s;
 }
 .frostCard{
     width: 92%;
@@ -450,6 +453,8 @@ button:hover{
     overflow-x: hidden;
     background-color: var(--first-col);
     justify-content: center;
+    padding-top: 70rem;
+    transition: 0.8s;
 }
 .section2 .sec2heading{
     font-size: 80rem;
@@ -471,7 +476,7 @@ button:hover{
     width: 1250rem;
     height: 950rem;
     margin-left: 45%;
-    margin-top: -5%;
+    margin-top: -4%;
 }
 .blob2:nth-child(2){
     filter: blur(20px);
@@ -1527,10 +1532,12 @@ button:hover{
 
 .section3{
     width: 100%;
-    min-height: 150vh;
+    min-height: 170vh;
     overflow-x: hidden;
     background-color: var(--first-col);
-    justify-content: center
+    justify-content: center;
+    padding-top: 70rem;
+    transition: 0.8s;
 }
 
 .section3 .originhead{
@@ -1645,7 +1652,6 @@ footer{
     width: 100%;
     background: linear-gradient(180deg ,#3586ff,rgb(0, 195, 255));
     min-height: 240rem;
-    padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1727,6 +1733,20 @@ footer .wave#wave4{
         background-position: 1000rem;
     }
 }
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+
 /* responsive design */
 @media screen and (max-width: 400px) {
     html{
